@@ -11,7 +11,14 @@ const routes: Routes = [
   },
   {
     path:'',
-    component:DashboardComponent
+    component:DashboardComponent,
+    children:[
+      {
+        path:'forms',
+        loadChildren:() => import('./forms/forms.module')
+        .then(r => r.FormsModule)
+      }
+  ]
   }
 ];
 
