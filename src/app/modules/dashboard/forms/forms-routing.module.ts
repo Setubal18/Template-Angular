@@ -6,19 +6,23 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
 
 
 const routes: Routes = [
-  {
-	path:'',
-	pathMatch:'full',
-	redirectTo:'forms'
-  },
-  {
-	path:'',
-	component: FormsComponent
-  },
-  {
-	path:'simple-form',
-	component: SimpleFormComponent
-  }
+  	{
+		path:'',
+		pathMatch:'full',
+		redirectTo:'forms'
+  	},
+  	{
+		path:'',
+		component: FormsComponent
+  	},
+  	{
+		path:'simple-form',
+		component: SimpleFormComponent
+  	},
+	{
+		path:'imcremental-form',
+		component: SimpleFormComponent
+	}
 ];
 
 @NgModule({
