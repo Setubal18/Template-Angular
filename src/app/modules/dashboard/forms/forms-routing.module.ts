@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { match } from 'assert';
 import { FormsComponent } from './forms.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
+import { IncrementalComponent } from './incremental/incremental.component';
 
 
 const routes: Routes = [
@@ -20,8 +21,8 @@ const routes: Routes = [
 		component: SimpleFormComponent
   	},
 	{
-		path:'imcremental-form',
-		component: SimpleFormComponent
+		path:'incremental',
+		component: IncrementalComponent
 	}
 ];
 
