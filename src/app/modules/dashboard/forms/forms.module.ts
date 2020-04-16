@@ -9,8 +9,8 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
 @NgModule({
   declarations: [FormsComponent, SimpleFormComponent],
   imports: [
-    CommonModule,
-    FormsRoutingModule
+	CommonModule,
+	FormsRoutingModule
   ]
 })
 export class FormsModule { }

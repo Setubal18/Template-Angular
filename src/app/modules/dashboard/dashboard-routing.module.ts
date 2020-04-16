@@ -5,19 +5,19 @@ import { DashboardComponent } from './dashboard.component';
 
 const routes: Routes = [
   {
-    path: '',
-    pathMatch:'full',
-    redirectTo: 'dashboard'
+	path: '',
+	pathMatch:'full',
+	redirectTo: 'dashboard'
   },
   {
-    path:'',
-    component:DashboardComponent,
-    children:[
-      {
-        path:'forms',
-        loadChildren:() => import('./forms/forms.module')
-        .then(r => r.FormsModule)
-      }
+	path:'',
+	component:DashboardComponent,
+	children:[
+		{
+		path:'forms',
+		loadChildren:() => import('./forms/forms.module')
+		.then(r => r.FormsModule)
+		}
   ]
   }
 ];

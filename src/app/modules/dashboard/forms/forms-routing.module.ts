@@ -7,17 +7,17 @@ import { SimpleFormComponent } from './simple-form/simple-form.component';
 
 const routes: Routes = [
   {
-    path:'',
-    pathMatch:'full',
-    redirectTo:'forms'
+	path:'',
+	pathMatch:'full',
+	redirectTo:'forms'
   },
   {
-    path:'',
-    component: FormsComponent
+	path:'',
+	component: FormsComponent
   },
   {
-    path:'simple-form',
-    component: SimpleFormComponent
+	path:'simple-form',
+	component: SimpleFormComponent
   }
 ];
 
