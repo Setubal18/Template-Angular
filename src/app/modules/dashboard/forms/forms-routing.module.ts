@@ -2,6 +2,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { match } from 'assert';
 import { FormsComponent } from './forms.component';
+import { SimpleFormComponent } from './simple-form/simple-form.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path:'',
     component: FormsComponent
+  },
+  {
+    path:'simple-form',
+    component: SimpleFormComponent
   }
 ];
 
