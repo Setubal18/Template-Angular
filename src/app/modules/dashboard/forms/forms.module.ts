@@ -6,13 +6,19 @@ import { FormsComponent } from './forms.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { IncrementalFormComponent } from './incremental-form/incremental-form.component';
 import { IncrementalComponent } from './incremental/incremental.component';
+import { SharedModule } from 'src/app/shared/shared/shared.module';
 
 
 @NgModule({
-  declarations: [FormsComponent, SimpleFormComponent, IncrementalFormComponent, IncrementalComponent],
+  declarations: [
+	  FormsComponent,
+	  SimpleFormComponent,
+	  IncrementalFormComponent,
+	  IncrementalComponent],
   imports: [
 	CommonModule,
-	FormsRoutingModule
+	FormsRoutingModule,
+	SharedModule
   ]
 })
 export class FormsModule { }
