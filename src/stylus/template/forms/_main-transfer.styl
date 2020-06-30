@@ -1,0 +1,77 @@
+@import '../../_colors'
+
+.main-transfer
+	display flex
+	align-items center
+
+	&>div:first-child
+		&>p
+			padding-left 8px
+
+	&>div:first-child, &>div:last-child
+		flex auto
+		width auto
+		max-width 49%
+
+		&>p
+			padding-bottom 8px
+			padding-top 8px
+
+		&>div
+			height 220px
+			border solid 1px escala-cinza-7
+			overflow hidden
+
+			&>div
+				width 100%
+				height 100%
+				overflow-y auto
+				padding 10px
+
+				&::-webkit-scrollbar
+					width 10px
+					background-color escala-cinza-8
+
+				&::-webkit-scrollbar-thumb
+					background escala-cinza-6
+					border-radius 20px
+
+				input[type='search']
+					width 100%
+					border solid 1px escala-cinza-7
+					border-radius 0
+					margin-bottom 10px
+					padding 5px
+					background-color escala-cinza-9
+
+				& > p
+					display flex
+					padding 8px 5px
+					border-top solid 0.5px escala-cinza-8
+					border-bottom solid 0.5px escala-cinza-8
+					cursor pointer
+					align-items center
+
+					&:before
+						content ''
+						display inline-table
+						width 5px
+						height 5px
+						background escala-cinza-6
+						border-radius 50%
+						margin-right 5px
+
+					&:hover
+						background turqueza
+
+	&>div:first-child>div
+		border-radius 10px 0 0 10px
+
+	&>div:last-child>div
+		border-radius 0 10px 10px 0
+
+	i // Setas
+		display table
+		padding 2px 5px
+		color escala-cinza-6
+		font-size 14px

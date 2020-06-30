@@ -1,0 +1,29 @@
+<div class="main-transfer">
+	<div>
+		<p>Itens Selecionados</p>
+		<div id="lista-Selecionados" class="checkbox-group">
+			<div>
+				<ng-container *ngFor="let select of listaSelecionada;let i = index">
+					<p  (click)="removeItem(select,i)">{{select?.name}}</p>
+				</ng-container>
+			</div>
+
+		</div>
+	</div>
+
+	<i [ngClass]="add ? 'pushing' : ''" class="fas fa-angle-double-right go-transfer"></i>
+	<i [ngClass]="remove ? 'removing' : ''" class="fas fa-angle-double-left back-transfer"></i>
+
+	<div>
+		<p>Itens disponíveis</p>
+		<div>
+			<!-- <input type="search" placeholder="Buscar Permissões"> -->
+			<div id="lista-Disponiveis" class="checkbox-group">
+				<ng-container *ngFor="let disp of listaDisponiveis;let i = index">
+					<p (click)="adicionaItem(disp,i)">{{ disp?.name}} + {{i}}</p>
+				</ng-container>
+			</div>
+		</div>
+
+	</div>
+</div>
