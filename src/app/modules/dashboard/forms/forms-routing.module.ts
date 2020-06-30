@@ -1,9 +1,9 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { match } from 'assert';
 import { FormsComponent } from './forms.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { IncrementalComponent } from './incremental/incremental.component';
+import { SelectedListFormComponent } from './selected-list-form/selected-list-form.component';
 
 
 const routes: Routes = [
@@ -23,6 +23,10 @@ const routes: Routes = [
 	{
 		path:'incremental',
 		component: IncrementalComponent
+	},
+	{
+		path: 'list-Selected',
+		component:SelectedListFormComponent
 	}
 ];
 
