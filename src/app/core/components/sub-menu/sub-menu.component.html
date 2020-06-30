@@ -1,0 +1,11 @@
+<section id="section_menu" class="header-section">
+	<div>
+		<h1>{{menuAtual?.title}}</h1>
+		<ul>
+			<li *ngFor="let menuItem of menuAtual?.item" routerLinkActive="active" (click)="atualizaRota()"
+				[routerLink]="menuItem?.rota">
+				<i class="{{ menuItem?.icone }}"></i> {{ menuItem?.label }}
+			</li>
+		</ul>
+	</div>
+</section>
